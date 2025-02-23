@@ -1,0 +1,57 @@
+<?php
+class JConfig {
+    public $offline = '0';
+    public $offline_message = 'Este sitio está en mantenimiento.<br /> Por favor, vuelva más tarde.';
+    public $display_offline_message = '1';
+    public $sitename = 'Nombre de tu sitio';
+    public $editor = 'tinymce';
+    public $captcha = '0';
+    public $list_limit = '20';
+    public $access = '1';
+    public $dbtype = 'pgsql';  // Asegúrate de que el tipo de base de datos esté correcto (pgsql o mysqli)
+    public $host = 'terraform-20250221163702222400000001.cnaei4ume8y6.eu-west-3.rds.amazonaws.com';  // Servidor de la base de datos
+    public $user = 'postgres';  // Usuario de la base de datos
+    public $password = 'admin123';  // Contraseña del usuario de la base de datos
+    public $db = 'cms_db';  // Nombre de la base de datos
+    public $dbprefix = 'jos_';  // Prefijo de las tablas de Joomla
+    public $live_site = '';  // URL del sitio
+    public $secret = 'tu_secreto';  // Clave secreta generada por Joomla
+    public $gzip = '0';
+    public $error_reporting = 'default';
+    public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{langtag}';
+    public $ftp_host = '';
+    public $ftp_port = '';
+    public $ftp_user = '';
+    public $ftp_pass = '';
+    public $ftp_root = '';
+    public $ftp_enable = '0';
+    public $offset = 'UTC';
+    public $mailonline = '1';
+    public $mailer = 'mail';
+    public $mailfrom = 'youremail@example.com';
+    public $fromname = 'Your Name';
+    public $sendmail = '/usr/sbin/sendmail';
+    public $smtpauth = '0';
+    public $smtpuser = '';
+    public $smtppass = '';
+    public $smtphost = 'localhost';
+    public $smtpsecure = 'none';
+    public $smtpport = '25';
+    public $caching = '0';
+    public $cache_handler = 'file';
+    public $cachetime = '15';
+    public $MetaDesc = 'Descripción de tu sitio';
+    public $MetaKeys = 'palabras, clave';
+    public $MetaTitle = '1';
+    public $MetaAuthor = '1';
+    public $sef = '1';
+    public $sef_rewrite = '1';
+    public $sef_suffix = '0';
+    public $unicodeslugs = '0';
+    public $feed_limit = '10';
+    public $log_path = '/var/www/html/logs';
+    public $tmp_path = '/var/www/html/tmp';
+    public $lifetime = '15';
+    public $session_handler = 'database';
+}
+?>
